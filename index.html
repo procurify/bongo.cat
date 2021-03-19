@@ -52,16 +52,6 @@
       })
     });
   </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120277085-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-120277085-2');
-  </script>
 </head>
 
 <body>
@@ -112,9 +102,10 @@
   </header>
   <div id="container">
     <hr />
+    <span id="toast">Demo, no matter what!</span>
     <div class="cat">
       <div id="head"></div>
-      <div id="mouth"></div>
+      <!-- <div id="mouth"></div> -->
       <div id="paw-left"></div>
       <div id="paw-right"></div>
     </div>
@@ -162,11 +153,16 @@
     </div>
   </div>
   <footer>
-    <span i18n="other-lang"><a href="/?lang=ca">En català</a></span>
-    <span i18n="courtesy">Art courtesy of <a href="https://twitter.com/StrayRogue" target="_blank">@StrayRogue</a></span>
-    <span i18n="meme">Meme by <a href="https://twitter.com/DitzyFlama" target="_blank">@DitzyFlama</a></span>
-    <span i18n="website">Website by <a href="https://erics.site/?utm_source=bongo.cat" target="_blank">Eric Huber</a> (<a href="https://twitter.com/Externalizable" target="_blank">@Externalizable</a>)</span>
+    <div>Simon Bongocat!</div>
+    <span >Credits to Alice Chan for Simon breadman. Forked from <a href="https://github.com/Externalizable/bongo.cat">Externalizable/bongo.cat</a></span>
   </footer>
 </body>
+
+<script>
+  $("#head").on("click", function () {
+    $("#toast").show();
+    $("#toast").fadeOut(700);
+  })
+</script>
 
 </html>
