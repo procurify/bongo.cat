@@ -237,8 +237,8 @@ select#select-instrument option {
 .cat>#head {
   background-image: url(../images/cat.png);
   z-index: 10;
-  top: -181px;
-  left: -32px;
+  top: -192px;
+  left: -49px;
 }
 
 .cat>#mouth {
